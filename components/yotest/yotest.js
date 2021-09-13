@@ -67,7 +67,7 @@ Component({
   methods: {
     verify() {
       if (!this.data.isInited) {
-        const error = new Error(`[ERROR] yotest isn't inited, please call after 'ready' event trigger`);
+        const error = new Error(`[ERROR] yotest isn't inited`);
         this.triggerEvent("error", error);
         console.error(error.message);
         return;
