@@ -48,7 +48,6 @@ Component({
       }
 
       const { __YOTEST__ } = App.globalData || {};
-
       if (__YOTEST__.data == null) {
         return;
       }
@@ -62,6 +61,8 @@ Component({
           ...__YOTEST__.data,
         });
       }
+      
+      __YOTEST__.data = null;
     },
   },
   methods: {
