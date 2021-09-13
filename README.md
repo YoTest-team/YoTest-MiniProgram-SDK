@@ -42,7 +42,7 @@
 
 ![绑定业务域名](./images/domain.gif)
 
-第三步，下载本项目的[index.html](https://github.com/YoTest-team/YoTest-MiniProgram-SDK/blob/master/index.html)，并将其上传到你项目所属的服务器、CDN或OSS服务上，若能通过绑定的 `业务域名` 正常访问，则预备工作完成。
+第三步，下载本项目的[index.html](https://github.com/YoTest-team/YoTest-MiniProgram-SDK/blob/master/index.html)，并将其上传到你项目所属的服务器、CDN或OSS服务上，若能通过绑定的 `业务域名` 正常访问，则预备工作完成^_^，接下来就可以顺利的进行SDK接入啦！
 
 ![上传index.html](./images/index.gif)
 
@@ -76,7 +76,7 @@
 
 ![引入友验小程序组件](./images/step3.gif)
 
-第四步，创建验证页面，并引入 `yotest-webview` 组件，此处需要绑定微信小程序的 `业务域名`，请参考[预备工作](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C)。
+第四步，创建验证页面，并引入 `yotest-webview` 组件，此处需要绑定微信小程序的 `业务域名`，请参考[预备工作（重要）](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C%E9%87%8D%E8%A6%81)。
 
 ```html
 <!-- pages/verify/verify.wxml -->
@@ -165,7 +165,7 @@ Page({
 
 #### url \<String\>
 
-必填，注册的域名对应的 HTML 地址，此域名需要在小程序后台进行 `业务域名` 绑定，域名绑定相关操作请参考[预备工作](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C)，对应 HTML 内容请参考[index.html](https://github.com/YoTest-team/YoTest-MiniProgram-SDK/blob/master/index.html)（此属性仅支持 `yotest-webview` 组件）。
+必填，注册的域名对应的 HTML 地址，此域名需要在小程序后台进行 `业务域名` 绑定，域名绑定相关操作请参考[预备工作（重要）](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C%E9%87%8D%E8%A6%81)，对应 HTML 内容请参考[index.html](https://github.com/YoTest-team/YoTest-MiniProgram-SDK/blob/master/index.html)（此属性仅支持 `yotest-webview` 组件）。
 
 ```html
 <yotest-webview url="https://your.domain.com/index.html"></yotest>
