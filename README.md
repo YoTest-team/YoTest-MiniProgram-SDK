@@ -7,7 +7,7 @@
 - [仓库入口](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E4%BB%93%E5%BA%93%E5%85%A5%E5%8F%A3)
 - [兼容性](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E5%85%BC%E5%AE%B9%E6%80%A7)
 - [安装](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E5%AE%89%E8%A3%85)
-- [预备工作]()
+- [预备工作（重要）](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C)
 - [快速开始](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
 - [API](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#api)
 
@@ -26,7 +26,7 @@
 
 安装完成后，请点击微信开发者工具的导航菜单中的 `工具 -> 构建npm` 进行 node_modules 的构建。
 
-### 预备工作
+### 预备工作（重要）
 
 ### 快速开始
 
@@ -58,7 +58,7 @@
 
 ![引入友验小程序组件](./images/step3.gif)
 
-第四步，创建验证页面，并引入 `yotest-webview` 组件，此处需要绑定微信小程序的 `业务域名`，请参考[预备工作]()。
+第四步，创建验证页面，并引入 `yotest-webview` 组件，此处需要绑定微信小程序的 `业务域名`，请参考[预备工作](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C)。
 
 ```html
 <!-- pages/verify/verify.wxml -->
@@ -110,18 +110,18 @@ Page({
 
 组件属性
 
-- [accessId]()
-- [pageRoute]()
-- [url]()
+- [accessId](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#accessid-string)
+- [pageRoute](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#pageroute-string)
+- [url](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#url-string)
 
 组件方法
 
-- [verify]()
+- [verify](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#verify)
 
 组件事件
 
-- [bindsuccess]()
-- [binderror]()
+- [bindsuccess](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#bindsuccess)
+- [binderror](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#binderror)
 
 #### accessId \<String\>
 
@@ -147,7 +147,7 @@ Page({
 
 #### url \<String\>
 
-必填，注册的域名对应的 HTML 地址，此域名需要在小程序后台进行 `业务域名` 绑定，域名绑定相关操作请参考[预备工作]()，对应 HTML 内容请参考[index.html]()（此属性仅支持 `yotest-webview` 组件）。
+必填，注册的域名对应的 HTML 地址，此域名需要在小程序后台进行 `业务域名` 绑定，域名绑定相关操作请参考[预备工作](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C)，对应 HTML 内容请参考[index.html](https://github.com/YoTest-team/YoTest-MiniProgram-SDK/blob/master/index.html)（此属性仅支持 `yotest-webview` 组件）。
 
 ```html
 <yotest-webview url="https://your.domain.com/index.html"></yotest>
