@@ -7,7 +7,7 @@
 - [仓库入口](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E4%BB%93%E5%BA%93%E5%85%A5%E5%8F%A3)
 - [兼容性](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E5%85%BC%E5%AE%B9%E6%80%A7)
 - [安装](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E5%AE%89%E8%A3%85)
-- [预备工作（重要）](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C)
+- [预备工作（重要）](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E9%A2%84%E5%A4%87%E5%B7%A5%E4%BD%9C%E9%87%8D%E8%A6%81)
 - [快速开始](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#%E5%BF%AB%E9%80%9F%E5%BC%80%E5%A7%8B)
 - [API](https://github.com/YoTest-team/YoTest-MiniProgram-SDK#api)
 
@@ -27,6 +27,24 @@
 安装完成后，请点击微信开发者工具的导航菜单中的 `工具 -> 构建npm` 进行 node_modules 的构建。
 
 ### 预备工作（重要）
+
+友验小程序SDK依赖了微信小程序的WebView组件的相关能力，因此若需要成功使用此SDK，需要提前满足三个能力：
+- 小程序基础库 >= 1.6.4；
+- 已绑定[业务域名](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/domain.html)；
+- [index.html](https://github.com/YoTest-team/YoTest-MiniProgram-SDK/blob/master/index.html)已放置在对应域名的URL路径之下，并且可以通过URL正常访问；
+
+第一步，请确认自己的小程序基础库 >= 1.6.4，如图所示。
+
+![确认基础库版本](./images/version.gif)
+
+
+第二步，绑定业务域名，其步骤如下图所示，更为详细的步骤请参考[微信小程序官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/ability/domain.html)。
+
+![绑定业务域名](./images/domain.gif)
+
+第三步，下载本项目的[index.html](https://github.com/YoTest-team/YoTest-MiniProgram-SDK/blob/master/index.html)，并将其上传到你项目所属的服务器、CDN或OSS服务上，若能通过绑定的 `业务域名` 正常访问，则预备工作完成。
+
+![上传index.html](./images/index.gif)
 
 ### 快速开始
 
