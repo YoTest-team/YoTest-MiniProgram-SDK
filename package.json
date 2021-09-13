@@ -1,0 +1,16 @@
+{
+  "name": "yotest-miniprogram-sdk",
+  "version": "1.0.3",
+  "description": "YoTest Mini Program SDK",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YoTest-team/YoTest-MiniProgram-SDK.git"
+  },
+  "miniprogram": "components",
+  "author": "yotest-team",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/YoTest-team/YoTest-MiniProgram-SDK/issues"
+  },
+  "homepage": "https://github.com/YoTest-team/YoTest-MiniProgram-SDK#readme"
+}
