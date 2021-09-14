@@ -212,7 +212,7 @@ Page({
 ```javascript
 /** index.js */
 Page({
-  onTapHandler() {
+  onButtonTapHandler() {
     this.selectComponent("#captcha").verify();
   },
   onVerifySuccessHandler({ detail }) {
@@ -240,7 +240,7 @@ Page({
 ```javascript
 /** index.js */
 Page({
-  onTapHandler() {
+  onButtonTapHandler() {
     this.selectComponent("#captcha").verify();
   },
   onVerifyErrorHandler(event) {
