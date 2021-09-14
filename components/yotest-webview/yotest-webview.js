@@ -15,7 +15,7 @@ Component({
       const { url } = this.properties;
       const { __YOTEST__ } = App.globalData || {};
       this.setData({
-        loadUrl: `${url}?accessId=${__YOTEST__.accessId}`,
+        loadUrl: `${url}?accessId=${__YOTEST__.accessId}#wechat_redirect`,
       });
     },
   },
